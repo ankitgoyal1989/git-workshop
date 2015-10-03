@@ -1,0 +1,69 @@
+git config --global user.name "user-name"
+git config --global user.email "user-email"
+git config --global --add color.ui true
+
+Command line commands:
+pwd
+  lists present working directory
+
+ls
+  directory listing
+
+cd [directory-name]
+  change directory
+
+mkdir [directory-name]
+  make a new directory
+
+touch [file-name.extension]
+  creates an empty file name with given extension
+
+GIT commands:
+git init
+  initializes a git repository
+
+git add
+  add new files to be added to the git repository
+
+git commit -m 'descriptive-message'
+  save the files/changes to the git repository with the timestamp and the user define message
+Note: We have to add the file everytime we want to commit the changes to the repository.##### git add <file-name> and then git commit -m <MESSAGE>#####
+
+git log
+  prints all the commits we made to the repository
+
+git log --oneline
+  print commit hash (unique commit id) and the messages used to save the changes
+
+git diff
+  Shows us what has changed between the staging area and working directory
+
+Branches:- parallel universe where we can work on different things in isolation
+
+git branch
+  lists all the created branches in the git repository
+
+git branch <new-branch>
+	creates a new branch inside the git repository
+  
+git checkout <branch-name>
+  change the branch to <branch-name>
+
+git merge <branch-name> 
+  Merges the master branch with the <branch-name>
+NOTE: make the checkout branch to MASTER to merge the changes 
+
+git checkout <commit-hash/unique-commit-id>
+  switches to the <commit-id>
+
+git revert --no-edit <comit-id>
+  Reverses <commit-id> commit by making another commit
+
+git reset --hard
+  Resets the working directory  
+
+git remote add origin <https://github.com/ankitgoyal1989/git_notes.git>
+  add the remote repository to the central server
+
+git push -u origin master
+  push the local repository changes to the central server  
